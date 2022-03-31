@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_startroom_black_24dp"
+        android:title="@string/title_startroom" />
+    <item
+        android:id="@+id/navigation_bathroom"
+        android:icon="@drawable/ic_bathroomboard_black_24dp"
+        android:title="@string/title_bathroom" />
+    <item
+        android:id="@+id/navigation_bedroom"
+        android:icon="@drawable/ic_bedroomboard_black_24dp"
+        android:title="@string/title_bedroom" />
+    <item
+        android:id="@+id/navigation_kitchen"
+        android:icon="@drawable/ic_kitchenboard_black_24dp"
+        android:title="@string/title_kitchen" />
+
+</menu>
