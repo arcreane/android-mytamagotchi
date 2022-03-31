@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_start"
         android:icon="@drawable/ic_startroom_black_24dp"
-        android:title="@string/title_startroom" />
+        android:title="@string/title_start" />
     <item
         android:id="@+id/navigation_bathroom"
         android:icon="@drawable/ic_bathroomboard_black_24dp"

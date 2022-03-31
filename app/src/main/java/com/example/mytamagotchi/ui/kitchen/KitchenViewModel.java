@@ -10,7 +10,7 @@ public class KitchenViewModel extends ViewModel {
 
     public KitchenViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is kitchen fragment");
     }
 
     public LiveData<String> getText() {

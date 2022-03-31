@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.mytamagotchi.R;
 import com.example.mytamagotchi.databinding.FragmentBedroomBinding;
 
 public class BedroomFragment extends Fragment {

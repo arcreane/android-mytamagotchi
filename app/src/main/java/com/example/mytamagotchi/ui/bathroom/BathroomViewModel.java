@@ -10,7 +10,7 @@ public class BathroomViewModel extends ViewModel {
 
     public BathroomViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is bathroom fragment");
     }
 
     public LiveData<String> getText() {
