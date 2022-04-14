@@ -13,8 +13,6 @@ public class KitchenViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
     public KitchenViewModel() {
-        Kitchen kitchen = new Kitchen();
-        kitchen.feedPet(tamagochi);
         mText = new MutableLiveData<>();
         mText.setValue("This is kitchen fragment");
     }

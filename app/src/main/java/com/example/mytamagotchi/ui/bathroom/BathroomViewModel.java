@@ -22,9 +22,7 @@ public class BathroomViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
     public BathroomViewModel() {
-        Bathroom bathroom = new Bathroom();
         mText = new MutableLiveData<>();
-        bathroom.washPet(tamagochi);
         mText.setValue("Bathroom");
     }
 

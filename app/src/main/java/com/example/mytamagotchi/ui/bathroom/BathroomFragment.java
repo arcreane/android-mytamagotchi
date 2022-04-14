@@ -1,9 +1,11 @@
 package com.example.mytamagotchi.ui.bathroom;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -30,6 +32,15 @@ public class BathroomFragment extends Fragment {
 
         binding = FragmentBathroomBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        Button myButton = root.findViewById(R.id.button_send);
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+                Log.d("Button", "clicked bathroom button");
+            }
+        });
+
 
         final TextView textView = binding.textBathroom;
         bathroomViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
