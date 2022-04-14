@@ -12,7 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.mytamagotchi.MainActivity;
 import com.example.mytamagotchi.R;
+import com.example.mytamagotchi.Tamagochi;
 import com.example.mytamagotchi.databinding.FragmentBedroomBinding;
 
 public class BedroomFragment extends Fragment {
@@ -23,6 +25,7 @@ public class BedroomFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         bedroomViewModel = new ViewModelProvider(this).get(BedroomViewModel.class);
+        bedroomViewModel.setTamagochi(((MainActivity)getActivity()).getMyTamagochi());
 
         binding = FragmentBedroomBinding.inflate(inflater, container, false);
         View root = binding.getRoot();

@@ -16,10 +16,18 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
+    Tamagochi myTamagochi = new Tamagochi();
+
+    public Tamagochi getMyTamagochi() {
+        return myTamagochi;
+    }
+
+    public void setMyTamagochi(Tamagochi myTamagochi) {
+        this.myTamagochi = myTamagochi;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        Tamagochi myTamagochi = new Tamagochi();
 
 
         super.onCreate(savedInstanceState);
