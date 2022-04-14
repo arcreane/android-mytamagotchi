@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">mytamagotchi</string>
+    <string name="title_startroom">Startroom</string>
+    <string name="title_bathroom">Bathroom</string>
+    <string name="title_bedroom">Bedroom</string>
+    <string name="title_kitchen">kitchen</string>
+    <string name="title_start">Start</string>
 </resources>
