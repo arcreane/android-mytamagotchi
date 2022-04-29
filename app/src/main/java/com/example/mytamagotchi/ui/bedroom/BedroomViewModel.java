@@ -13,8 +13,6 @@ public class BedroomViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
     public BedroomViewModel() {
-        Bedroom bedroom = new Bedroom();
-        bedroom.sleepPet(tamagochi);
         mText = new MutableLiveData<>();
         mText.setValue("This is bedroom fragment");
     }
