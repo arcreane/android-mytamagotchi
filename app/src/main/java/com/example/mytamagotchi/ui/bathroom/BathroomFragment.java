@@ -16,7 +16,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.mytamagotchi.MainActivity;
 import com.example.mytamagotchi.R;
-import com.example.mytamagotchi.Tamagochi;
 import com.example.mytamagotchi.databinding.FragmentBathroomBinding;
 
 public class BathroomFragment extends Fragment {

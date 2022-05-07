@@ -27,6 +27,7 @@ public class StartroomFragment extends Fragment {
         binding = FragmentStartroomBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+
         final TextView textView = binding.textStartroom;
         startroomViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
