@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
     <item
         android:id="@+id/navigation_start"
         android:icon="@drawable/ic_startroom_black_24dp"
-        android:title="@string/title_start" />
+        android:title="@string/title_startroom" />
     <item
         android:id="@+id/navigation_bathroom"
         android:icon="@drawable/ic_bathroomboard_black_24dp"
@@ -17,5 +17,4 @@
         android:id="@+id/navigation_kitchen"
         android:icon="@drawable/ic_kitchenboard_black_24dp"
         android:title="@string/title_kitchen" />
-
 </menu>
