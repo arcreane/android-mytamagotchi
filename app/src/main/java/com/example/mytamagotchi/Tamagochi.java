@@ -18,12 +18,11 @@ public class Tamagochi {
     public Integer happiness;
 
     public Tamagochi(){
-        Log.i("tag", "azaafazaffaz");
-        this.CreateStatTamagochi("Enzo", "Frites", "Coca", "Ballon", 100, 100, 100, 100,100);
+        this.CreateStatTamagochi("Enzo", "Frites", "Coca", "Ballon", 100, 100, 100, 100);
         this.loseRessources();
     }
 
-    public void CreateStatTamagochi(String myName, String myFavoriteFood, String myFavoriteDrink, String myFavoriteObject, Integer myHunger, Integer myThirst, Integer mySleep, Integer myCleanliness, Integer myHappiness){
+    public void CreateStatTamagochi(String myName, String myFavoriteFood, String myFavoriteDrink, String myFavoriteObject, Integer myHunger, Integer myThirst, Integer mySleep, Integer myCleanliness){
         // Starters Data
         name = myName;
         favoriteFood = myFavoriteFood;
@@ -33,7 +32,7 @@ public class Tamagochi {
         thirst = myThirst;
         sleep = mySleep;
         cleanliness = myCleanliness;
-        happiness = myHappiness;
+        happiness = (hunger+thirst+sleep+cleanliness)/4;
         // Define in which room the starter is playing based on what is needed for him
     }
 
@@ -43,7 +42,7 @@ public class Tamagochi {
             @Override
             public void run(){
                 int random = new Random().nextInt(4);
-                String listOfStat[] = {"hunger", "thrist", "sleep", "cleanliness", "happiness"};
+                String listOfStat[] = {"hunger", "thrist", "sleep", "cleanliness"};
                 switch (listOfStat[random]) {
                     case "hunger":
                         if (hunger == 0){
@@ -85,20 +84,11 @@ public class Tamagochi {
                         Log.i("tag", "cleanliness" + cleanliness);
 
                         break;
-                    case "happiness":
-                        if (happiness == 0){
-                            Log.i("tag", "Game over");
-                            break;
-                            /// Swap to game over screen
-                        }
-                        happiness--;
-                        Log.i("tag", "happiness"+ happiness);
-
-                        break;
-
 
                 }
+                happiness = (hunger+thirst+sleep+cleanliness)/4;
                 Log.i("tag", "Loses");
+                Log.i("tag", String.valueOf(happiness));
             }
         },0,10000);
     }
