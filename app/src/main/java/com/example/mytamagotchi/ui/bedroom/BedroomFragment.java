@@ -37,6 +37,13 @@ public class BedroomFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Log.d("Button", "clicked bedroom button");
+                Tamagochi tamagochi = ((MainActivity) getActivity()).getMyTamagochi();
+                if (tamagochi.sleep > 95){
+                    tamagochi.sleep = 100;
+                }
+                else {
+                    tamagochi.sleep = tamagochi.sleep + 5;
+                }
             }
         });
 
