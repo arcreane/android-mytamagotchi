@@ -1,6 +1,12 @@
 package com.example.mytamagotchi;
 
 import android.util.Log;
+import android.view.View;
+
+import androidx.fragment.app.FragmentManager;
+import androidx.navigation.fragment.NavHostFragment;
+
+import com.example.mytamagotchi.databinding.FragmentStartroomBinding;
 
 import java.util.Random;
 import java.util.Timer;
@@ -18,7 +24,7 @@ public class Tamagochi {
     public Integer happiness;
 
     public Tamagochi(){
-        this.CreateStatTamagochi("Enzo", "Frites", "Coca", "Ballon", 100, 100, 100, 100);
+        this.CreateStatTamagochi("Enzo", "Frites", "Coca", "Ballon", 0, 0, 0, 0);
         this.loseRessources();
     }
 
@@ -47,6 +53,9 @@ public class Tamagochi {
                     case "hunger":
                         if (hunger == 0){
                             Log.i("tag", "Game over");
+//                            View view = null;
+//                            view.findViewById(R.id.navigation_start);
+//                            FragmentManager.findFragment(view);
                             break;
                             /// Swap to game over screen
                         }
@@ -57,6 +66,9 @@ public class Tamagochi {
                     case "thrist":
                         if (thirst == 0){
                             Log.i("tag", "Game over");
+//                            View view = null;
+//                            view.findViewById(R.id.navigation_start);
+//                            FragmentManager.findFragment(view);
                             break;
                             /// Swap to game over screen
                         }
@@ -67,6 +79,9 @@ public class Tamagochi {
                     case "sleep":
                         if (sleep == 0){
                             Log.i("tag", "Game over");
+//                            View view = null;
+//                            view.findViewById(R.id.navigation_start);
+//                            FragmentManager.findFragment(view);
                             break;
                             /// Swap to game over screen
                         }
@@ -77,6 +92,9 @@ public class Tamagochi {
                     case "cleanliness":
                         if (cleanliness == 0){
                             Log.i("tag", "Game over");
+//                            View view = null;
+//                            view.findViewById(R.id.navigation_start);
+//                            FragmentManager.findFragment(view);
                             break;
                             /// Swap to game over screen
                         }
