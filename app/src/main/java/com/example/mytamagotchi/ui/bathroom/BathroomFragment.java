@@ -1,6 +1,7 @@
 package com.example.mytamagotchi.ui.bathroom;
 
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +17,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.mytamagotchi.MainActivity;
 import com.example.mytamagotchi.R;
-import com.example.mytamagotchi.Tamagochi;
 import com.example.mytamagotchi.databinding.FragmentBathroomBinding;
 
 public class BathroomFragment extends Fragment {
