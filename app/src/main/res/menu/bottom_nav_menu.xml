@@ -15,7 +15,7 @@
         android:title="@string/title_bedroom" />
     <item
         android:id="@+id/navigation_kitchen"
-        android:icon="@drawable/ic_kitchenboard_black_24dp"
+        android:icon="@drawable/shower"
         android:title="@string/title_kitchen" />
 
 </menu>
