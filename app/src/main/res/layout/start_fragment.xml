@@ -7,8 +7,8 @@
     tools:context=".ui.start.StartFragment">
     <ImageButton
         android:id="@+id/button_tamagochi_1"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
         android:src="@drawable/tama1"
@@ -16,15 +16,15 @@
     />
     <ImageButton
         android:id="@+id/button_tamagochi_2"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
         android:layout_centerInParent="true"
         android:src="@drawable/tama2"
         android:text="Tamagochi 2" />
     <ImageButton
-        android:id="@+id/button_tamagochi_3"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:id="@+id/button_tamago12hi_3"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
         android:src="@drawable/tama3"
