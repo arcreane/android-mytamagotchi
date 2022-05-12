@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bathroom_room"
+    android:background="@drawable/home_bg"
     tools:context=".ui.startroom.StartroomFragment">
-
     <TextView
         android:id="@+id/text_startroom"
         android:layout_width="match_parent"

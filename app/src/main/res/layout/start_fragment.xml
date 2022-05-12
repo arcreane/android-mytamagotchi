@@ -3,30 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
     tools:context=".ui.start.StartFragment">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
-    <Button
+    <ImageButton
         android:id="@+id/button_tamagochi_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentLeft="true"
+        android:src="@drawable/tama1"
         android:text="Tamagochi 1"
     />
-    <Button
+    <ImageButton
         android:id="@+id/button_tamagochi_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_centerInParent="true"
+        android:src="@drawable/tama2"
         android:text="Tamagochi 2" />
-    <Button
+    <ImageButton
         android:id="@+id/button_tamagochi_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentRight="true"
+        android:src="@drawable/tama3"
         android:text="Tamagochi 3"
         />
 </RelativeLayout>

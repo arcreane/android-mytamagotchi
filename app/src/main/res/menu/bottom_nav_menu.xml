@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
         android:id="@+id/navigation_start"
         android:icon="@drawable/closet"
         android:title="@string/title_start" />
     <item
         android:id="@+id/navigation_bathroom"
-        android:icon="@drawable/shower"
+        android:icon="@drawable/soap"
         android:title="@string/title_bathroom" />
     <item
         android:id="@+id/navigation_bedroom"
@@ -17,5 +16,4 @@
         android:id="@+id/navigation_kitchen"
         android:icon="@drawable/salmon"
         android:title="@string/title_kitchen" />
-
 </menu>
