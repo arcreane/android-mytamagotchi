@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@assets/bathroom_room"
+    android:background="@drawable/bathroom_room"
     tools:context=".ui.bathroom.BathroomFragment">
 
     <TextView
