@@ -32,8 +32,21 @@ public class BathroomFragment extends Fragment {
 
         binding = FragmentBathroomBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        ImageButton myButton = root.findViewById(R.id.button_send);
-        myButton.setImageResource(R.drawable.shower);
+        Button myButton = root.findViewById(R.id.button_send);
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+                Log.d("Button", "clicked bathroom button");
+                Tamagochi tamagochi = ((MainActivity) getActivity()).getMyTamagochi();
+                if (tamagochi.cleanliness > 95){
+                    tamagochi.cleanliness = 100;
+                }
+                else {
+                    tamagochi.cleanliness = tamagochi.cleanliness + 5;
+                }
+            }
+        });
 
 
         final TextView textView = binding.textBathroom;

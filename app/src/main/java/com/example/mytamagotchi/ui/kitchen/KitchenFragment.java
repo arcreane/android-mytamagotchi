@@ -37,6 +37,21 @@ public class KitchenFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Log.d("Button", "clicked kitchen button");
+                Tamagochi tamagochi = ((MainActivity) getActivity()).getMyTamagochi();
+                if (tamagochi.hunger > 95){
+                    tamagochi.hunger = 100;
+                }
+                else {
+                    tamagochi.hunger = tamagochi.hunger + 5;
+                }
+                if (tamagochi.thirst > 95){
+                    tamagochi.thirst = 100;
+                }
+                else{
+                    tamagochi.thirst = tamagochi.thirst + 5;
+                }
+
+
             }
         });
 
