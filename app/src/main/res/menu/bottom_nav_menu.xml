@@ -3,19 +3,19 @@
 
     <item
         android:id="@+id/navigation_start"
-        android:icon="@drawable/ic_startroom_black_24dp"
+        android:icon="@drawable/closet"
         android:title="@string/title_start" />
     <item
         android:id="@+id/navigation_bathroom"
-        android:icon="@drawable/ic_bathroomboard_black_24dp"
+        android:icon="@drawable/shower"
         android:title="@string/title_bathroom" />
     <item
         android:id="@+id/navigation_bedroom"
-        android:icon="@drawable/ic_bedroomboard_black_24dp"
+        android:icon="@drawable/lamp"
         android:title="@string/title_bedroom" />
     <item
         android:id="@+id/navigation_kitchen"
-        android:icon="@drawable/shower"
+        android:icon="@drawable/salmon"
         android:title="@string/title_kitchen" />
 
 </menu>
