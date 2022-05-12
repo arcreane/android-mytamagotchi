@@ -1,6 +1,7 @@
 package com.example.mytamagotchi.ui.bathroom;
 
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,14 +32,8 @@ public class BathroomFragment extends Fragment {
 
         binding = FragmentBathroomBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        Button myButton = root.findViewById(R.id.button_send);
-        myButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                
-                Log.d("Button", "clicked bathroom button");
-            }
-        });
+        ImageButton myButton = root.findViewById(R.id.button_send);
+        myButton.setImageResource(R.drawable.shower);
 
 
         final TextView textView = binding.textBathroom;
