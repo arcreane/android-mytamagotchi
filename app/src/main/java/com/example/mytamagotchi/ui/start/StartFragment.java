@@ -11,12 +11,12 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.mytamagotchi.R;
 import com.example.mytamagotchi.databinding.StartFragmentBinding;
@@ -41,7 +41,7 @@ public class StartFragment extends Fragment {
 
 
         // Buttons to choose starter Tamagochi
-        Button myButton = root.findViewById(R.id.button_tamagochi_1);
+        ImageButton myButton = root.findViewById(R.id.button_tamagochi_1);
 
 
         myButton.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +51,7 @@ public class StartFragment extends Fragment {
             }
         });
 
-        Button myButton1 = root.findViewById(R.id.button_tamagochi_2);
+        ImageButton myButton1 = root.findViewById(R.id.button_tamagochi_2);
         myButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,7 +60,7 @@ public class StartFragment extends Fragment {
             }
         });
 
-        Button myButton2 = root.findViewById(R.id.button_tamagochi_3);
+        ImageButton myButton2 = root.findViewById(R.id.button_tamagochi_3);
         myButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

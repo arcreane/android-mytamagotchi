@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -32,7 +33,7 @@ public class BedroomFragment extends Fragment {
         binding = FragmentBedroomBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        Button myButton = root.findViewById(R.id.button_send);
+        ImageButton myButton = root.findViewById(R.id.button_send);
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,11 +48,10 @@ public class BedroomFragment extends Fragment {
             }
         });
 
-        final TextView textView = binding.textBedroom;
         bedroomViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+
             }
         });
         return root;

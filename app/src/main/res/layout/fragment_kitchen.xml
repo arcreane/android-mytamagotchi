@@ -15,5 +15,5 @@
             android:src="@drawable/food"
             android:text="Manger"
             android:translationX="180dp"
-            android:translationY="650dp" />
+            android:translationY="590dp" />
 </RelativeLayout>
